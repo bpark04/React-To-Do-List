@@ -31,7 +31,7 @@ export default class App extends Component {
       completed: true,
     },
     {
-      id: "1",
+      id: "2",
       title: "Read a book",
       completed: true,
     }
