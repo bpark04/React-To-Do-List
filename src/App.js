@@ -24,6 +24,21 @@ export default class App extends Component {
     }
   }
 
+  todoData =  [
+    {
+      id: "1",
+      title: "Study",
+      completed: true,
+    },
+    {
+      id: "1",
+      title: "Read a book",
+      completed: true,
+    }
+  ]
+    
+
+
   render() {
     return(
       <div className="container">
@@ -31,15 +46,15 @@ export default class App extends Component {
           <div className="title">
             <h1>To-Do List</h1>
           </div>
-
-          <div style={this.getStyle()}>
-            <input type="checkbox" defaultChecked={false}/>
-            Study
-            <button style={this.btnStyle}>x</button>
-          </div>
+          {this.todoData.map(data => (
+            <div style={this.getStyle()} key={data.id}>
+              <input type="checkbox" defaultChecked={false}/>
+                {data.title}
+              <button style={this.btnStyle}>x</button>
+            </div>
+          ))}
 
         </div>
-        
       </div>
     )
   }
