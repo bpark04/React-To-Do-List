@@ -1,12 +1,13 @@
-# React To-Do Liat App 📋
+# To-Do List App 📋
 
-- This is a todo web application to manage your daily tasks.
+### This is a todo web application to manage your daily tasks.
+
 - What you can do with this app:
     - Add daily tasks
     - Mark them as complete 
     - Delete tasks 
 - It is built in React.js and Tailwind CSS
-***
+
 ## How to run the app in your local machine:
 - Clone the repository 
     ```
