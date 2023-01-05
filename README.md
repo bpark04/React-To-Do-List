@@ -6,7 +6,7 @@
     - Add daily tasks
     - Mark them as complete 
     - Delete tasks 
-- It is built in React.js and Tailwind CSS
+- This project is built using *React.js* and *Tailwind CSS*.
 
 ## How to run the app in your local machine:
 - Clone the repository 
