@@ -1,17 +1,14 @@
 import React, {useState} from "react";
 import "./App.css";
 import List from "./Components/List.js";
+import Form from "./Components/Form.js";
 
 export default function App()  {
 
 
   const [todoData, setTodoData] = useState([]);
   const [value, setValue] = useState("");
-    
-
-  const handleChange = (e) => {
-    setValue(e.target.value);
-  };
+  
 
   const handleSubmit = (e) => {
     // to prevent page reload when sending input inside form
@@ -21,7 +18,7 @@ export default function App()  {
       id: Date.now(),
       title: value,
       completed: false,
-    };
+    }
 
     // add new to-do data to existing list
     setTodoData((prev) => [...prev, newTodo]);
@@ -36,23 +33,8 @@ export default function App()  {
         </div>
 
         <List todoData={todoData} setTodoData={setTodoData}/>
-
-        <form style={{display: "flex"}} onSubmit={handleSubmit}>
-          <input 
-            type = "text" 
-            name = "value" 
-            style = {{ flex: '10', padding: '5px' }} 
-            placeholder = "Please enter your next to-do" 
-            value = {value}
-            onChange = {handleChange}
-          />
-          <input 
-            type = "submit"
-            value = "Enter"
-            className = "btn"
-            style = {{flex: '1'}}
-          />
-        </form>
+        <Form handleSubmit = {handleSubmit} value={value} setValue={setValue}/>
+        
       </div>
     </div>
   )
