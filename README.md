@@ -7,3 +7,20 @@
     - Delete tasks 
 - It is built in React.js and Tailwind CSS
 ***
+## How to run the app in your local machine:
+- Clone the repository 
+    ```
+    git clone https://github.com/SarvjeetGit/Todo-List-Website.git](https://github.com/bpark04/React-To-Do-List.git
+    ```
+- Open the project in your favorite editor 
+    ```
+    cd React-To-Do-List 
+    ```
+- Install the dependencies
+    ```
+    npm install
+     ```
+- Start the application
+    ```
+    npm start
+    ```
