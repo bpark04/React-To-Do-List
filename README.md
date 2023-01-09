@@ -11,7 +11,7 @@
 ## How to run the app in your local machine:
 - Clone the repository 
     ```
-    git clone https://github.com/SarvjeetGit/Todo-List-Website.git](https://github.com/bpark04/React-To-Do-List.git
+    git clone https://github.com/bpark04/React-To-Do-List.git
     ```
 - Open the project in your favorite editor 
     ```
